@@ -6,7 +6,7 @@ using namespace std;
 #define WEEK8_SEPARATE_COMPILATION_RPS_FUNCTIONS_HPP
 void display_instructions();
 
-char player_move_func();
+char playerMoveFunc();
 
 char computer_move_func();
 

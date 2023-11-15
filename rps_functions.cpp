@@ -9,7 +9,7 @@ void display_instructions()
 }
 
 //function get player move
-char player_move()
+char playerMoveFunc()
 {
     char player_move;
 
@@ -29,7 +29,7 @@ char player_move()
 }
 //function get computer move
 
-char computer_move()
+char computer_move_func()
 {
     int computer_move = rand() % 3 + 1;
     if (computer_move == 1)
@@ -48,6 +48,7 @@ char computer_move()
 bool get_do_again()
 {
     char playAgain;
+    bool answer;
     do
     {
         cout << "Do you want to play again? Enter y for yes or n for no ";
@@ -67,10 +68,11 @@ bool get_do_again()
     switch (playAgain)
     {
         case 'y':
-            return true;
+            answer =  true;
         case 'n':
-            return false;
+            answer =  false;
     }
+    return answer;
 }
 
 //winner function
